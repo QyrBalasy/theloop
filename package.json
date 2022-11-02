@@ -1,0 +1,23 @@
+{
+  "name": "theloop",
+  "version": "1.0.0",
+  "description": "landing page",
+  "main": "gulpfile.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/QyrBalasy/theloop.git"
+  },
+  "author": "qyrbalasy",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/QyrBalasy/theloop/issues"
+  },
+  "homepage": "https://github.com/QyrBalasy/theloop#readme",
+  "dependencies": {
+    "gulp": "^4.0.2"
+  }
+}
