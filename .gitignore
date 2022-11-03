@@ -12,6 +12,8 @@ yarn.lock
 
 # production
 /build
+/dist
+
 
 # misc
 .DS_Store
@@ -32,4 +34,5 @@ yarn-error.log*
 .eslintcache
 ./CHANGELOG.md
 CHANGELOG.md
+/*.zip
 doc
