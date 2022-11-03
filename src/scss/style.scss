@@ -1,21 +1,50 @@
+@import "base/module";
+@import 'components/module';
+@import 'layout/module';
+@import 'pages/module.scss';
+
+
 @import "fonts.scss";
 
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+*:focus {
+  outline: 1px solid #FFB400;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+html,
 body {
-  font-family: CormorantUpright;
-  background-color: #000;
-  span {
-    color: red;
-  }
+  height: 100%;
 }
 
-@media (max-width: 768px){
-  span {
-    font-size: 20px;
-  }
+body {
+  font-family: RFDewi;
 }
 
-@media (max-width: 768px){
-  body {
-      background-color: green;
-    }
+a {
+  text-decoration: none;
 }
+
+// @media (max-width: 768px){
+//   span {
+//     font-size: 20px;
+//   }
+// }
+
+// @media (max-width: 768px){
+//   body {
+//       background-color: green;
+//     }
+// }
