@@ -1,0 +1,17 @@
+.section-promo{
+  &-elements{
+    display: flex;
+    &__title{
+      flex-basis: 60%;
+      flex-direction: column;
+      justify-content: space-between;
+      padding-top: 147px;
+      &-contacts{
+        padding-top: 178px;
+      }
+    }
+    &__item{
+      flex-basis: 40%;
+    }
+  }
+}

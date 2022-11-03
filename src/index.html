@@ -1,26 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
-@@include('html/head.html', {
-  "title": "[The Loop] Мы создаем дизайн  не для сайтов, а для людей"
-})
-<body>
-  @@include('html/header.html', {})
-  <main>
-    <div class="container">
-      <p>
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maiores corrupti non id natus culpa voluptatibus harum
-        perferendis aperiam. Labore nemo, debitis possimus cumque dolor illo aspernatur est velit maiores alias.
-      </p>
-      <br/>
-      <p>
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maiores corrupti non id natus culpa voluptatibus harum
-        perferendis aperiam. Labore nemo, debitis possimus cumque dolor illo aspernatur est velit maiores alias.
-      </p>
+  @@include('html/head.html', { "title": "[The Loop] Мы создаем дизайн не для сайтов, а для людей" })
+  <body>
+    @@include('html/header.html', {})
+    <main>
+      <section class="section-promo">
+        <div class="container">
+          <div class="section-promo-elements">
+            <div class="section-promo-elements__title">
+              <h1>
+                Мы создаем <br> дизайн <br> не для сайтов, <br> а
+                <span style="color: #a9b0fc"> для людей </span>
+              </h1>
+              <div class="section-promo-elements__title-contacts">
+                <h3>
+                  Бесплатная консультация
+                </h3>
+                <p>
+                  Оставьте свой номер и мы вам перезвоним
+                </p>
+                <form>
+                  <input type="text" placeholder="введите номер">
+                  <button>Отправить</button>
+                </form>
 
-    </div>
-    
-  </main>
-  @@include('html/footer.html', {})
-  <script src="js/app.min.js"></script>
-</body>
+              </div>
+            </div>
+            <div class="section-promo-elements__item">
+              <h1>
+                Мы создаем дизайн не для сайтов, а
+                <span style="color: #a9b0fc"> для людей </span>
+              </h1>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    @@include('html/footer.html', {})
+    <script src="js/app.min.js"></script>
+  </body>
 </html>
