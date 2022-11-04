@@ -7,5 +7,9 @@
     line-height: 29px;
     font-weight: 400;
     color: $black;
+    transition: all ease-in 0.2s ;
+    &:hover{
+      color: #A1C4FF;
+    }
   } 
 }

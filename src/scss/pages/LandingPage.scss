@@ -1,17 +1,37 @@
-.section-promo{
-  &-elements{
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 160px;
+}
+
+.section-promo {
+  &-elements {
     display: flex;
-    &__title{
+    &__title {
       flex-basis: 60%;
       flex-direction: column;
       justify-content: space-between;
       padding-top: 147px;
-      &-contacts{
+      &-contacts {
         padding-top: 178px;
       }
     }
-    &__item{
+    &__item {
       flex-basis: 40%;
+      margin: auto;
+    }
+  }
+}
+
+.section-aboutUs {
+  &__elements {
+    flex-basis: 40%;
+    &__title{}
+    &__text {
+      margin-top: 111px;
+      display: flex;
+      flex-direction: column;
+      gap: 108px;
     }
   }
 }
