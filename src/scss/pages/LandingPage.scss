@@ -24,14 +24,54 @@ main {
 }
 
 .section-aboutUs {
+  &__title {
+    color: $black;
+    margin-bottom: 13px;
+  }
   &__elements {
-    flex-basis: 40%;
-    &__title{}
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
     &__text {
+      flex-basis: 40%;
       margin-top: 111px;
-      display: flex;
-      flex-direction: column;
-      gap: 108px;
+      & p:first-child {
+        margin-bottom: 108px;
+      }
     }
+    &__image {
+      position: relative;
+      flex-basis: 60%;
+      background-image: url("@img/WomanPhoto.png");
+      background-repeat: no-repeat;
+      background-position: right;
+      height: 699px;
+      & > p {
+        padding: 23px 28px 23px 62px;
+        border-radius: 10px;
+        color: $black;
+        width: fit-content;
+        position: absolute;
+        & svg {
+          position: absolute;
+          left: 20px;
+          padding: 4px;
+          border-radius: 3px;
+          width: 30px;
+          height: 30px;
+        }
+      }
+    }
+  }
+}
+
+
+.section-call {
+  background-image: url('@img/background1.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 60px 0;
+  &__elements {
+    max-width: 764px;
   }
 }

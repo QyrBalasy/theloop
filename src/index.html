@@ -12,15 +12,23 @@
                 Мы создаем <br />
                 дизайн <br />
                 не для сайтов, <br />
-                а
-                <span style="color: #a9b0fc"> для людей </span>
+                а <span style="color: #a9b0fc"> для людей </span>
               </h1>
               <div class="section-promo-elements__title-contacts">
-                <h3>Бесплатная консультация</h3>
+                <p>
+                  <strong style="color: #000000; margin-bottom: 8px"
+                    >Бесплатная консультация
+                  </strong>
+                </p>
                 <p>Оставьте свой номер и мы вам перезвоним</p>
-                <form>
-                  <input type="text" placeholder="введите номер" />
-                  <button>Отправить</button>
+                <form method="post">
+                  <input
+                    type="tel"
+                    data-tel-input
+                    placeholder="Введите телефон"
+                    maxlength="18"
+                  />
+                  <button type="submit">Отправить</button>
                 </form>
               </div>
             </div>
@@ -35,19 +43,91 @@
       </section>
       <section class="section-aboutUs">
         <div class="container">
+          <h2 class="section-aboutUs__title">О нас</h2>
           <div class="section-aboutUs__elements">
-            <h2 class="section-aboutUs__elements__title">О нас</h2>
             <div class="section-aboutUs__elements__text">
               <p>
-                Мы команда из молодых и креативных специалистов, которые
-                ориентрованы на решение бизнес-задач.
+                Мы команда из молодых и <br />
+                <span
+                  style="
+                    background-color: #d8dbff;
+                    border-radius: 17px;
+                    padding: 0 10px;
+                  "
+                >
+                  креативных специалистов,
+                </span>
+                которые ориентрованы на решение бизнес-задач.
               </p>
               <p>
-                Создаем вкусные дизайны, которые помогают малому и среднему
-                бизнесу выделяться на фоне конкурентов и приносить клиентов. Еще
-                и собираем сайты на no-code инструменте.
+                Создаем
+                <span
+                  style="
+                    background-color: #dbe8fe;
+                    border-radius: 17px;
+                    padding: 0 10px;
+                  "
+                  >вкусные дизайны,</span
+                >
+                которые помогают малому и среднему бизнесу выделяться на фоне
+                конкурентов и приносить клиентов. Еще и собираем сайты на
+                no-code инструменте.
+              </p>
+              <p
+                style="
+                  font-size: 200px;
+                  line-height: 300px;
+                  font-weight: 400;
+                  color: #ecf3ff;
+                "
+              >
+                [
               </p>
             </div>
+            <div class="section-aboutUs__elements__image">
+              <p style="background-color: #dbe8fe; left: 30px; top: 60px">
+                <svg style="background-color: #a1c4ff">
+                  <use xlink:href="@img/icons/icons.svg#TargetIcon"></use>
+                </svg>
+                Таргет
+              </p>
+              <p style="background-color: #ffe7e2; right: 10px; top: 20%">
+                <svg style="background-color: #ffc4b8">
+                  <use xlink:href="@img/icons/icons.svg#CreativeIcon"></use>
+                </svg>
+                Креатив
+              </p>
+              <p style="background-color: #e3deff; bottom: 148px">
+                <svg style="background-color: #9580ff">
+                  <use xlink:href="@img/icons/icons.svg#SupportIcon"></use>
+                </svg>
+                Поддержка
+              </p>
+            </div>
+          </div>
+          <div></div>
+        </div>
+      </section>
+      <section class="section-services">
+        <div class="container">
+          <h2 class="section-services__title">Услуги</h2>
+          <div class="section-services__elements"></div>
+        </div>
+      </section>
+      <section class="section-call">
+        <div class="container">
+          <div class="section-call__elements">
+            <h2 class="section-call__title">Не знаете какой сайт вам нужен?</h2>
+            <p style="margin: 50px 0;">Оставьте свой номер и мы Вас проконсультируем бесплатно</p>
+            <form method="post">
+              <input
+                type="tel"
+                data-tel-input
+                placeholder="Введите телефон"
+                maxlength="18"
+              />
+              <button type="submit">Отправить</button>
+            </form>
           </div>
         </div>
       </section>
