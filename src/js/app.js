@@ -9,3 +9,5 @@ phoneInput.isPhone();
 // плагины через npm устанавливаешь и модули вызываешь
 // import Swiper, { Navigation, Pagination } from "swiper";
 // const swiper = new Swiper();
+
+
