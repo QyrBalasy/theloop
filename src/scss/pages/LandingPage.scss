@@ -118,3 +118,13 @@ main {
     }
   }
 }
+
+.section-call {
+  background-image: url("@img/background1.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 60px 0;
+  &__items {
+    max-width: 764px;
+  }
+}
