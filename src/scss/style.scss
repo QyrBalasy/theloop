@@ -1,7 +1,7 @@
 @import "base/module";
 @import 'components/module';
 @import 'layout/module.scss';
-// @import 'pages/module.scss';
+@import 'pages/module.scss';
 
 @import "fonts.scss";
 
@@ -15,7 +15,7 @@
 }
 
 *:focus {
-  outline: 1px solid #FFB400;
+  outline: 1px solid #A1C4FF;
 }
 
 ol,

@@ -1,0 +1,23 @@
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 160px;
+}
+
+.section-promo {
+  &__items {
+    display: flex;
+    justify-content: space-between;
+    &-content {
+      max-width: 656px;
+      display: flex;
+      flex-direction: column;
+      gap: 100px;
+      padding-top: 147px;
+    }
+    &-abstract {
+      flex-basis: 40%;
+      margin: auto;
+    }
+  }
+}
