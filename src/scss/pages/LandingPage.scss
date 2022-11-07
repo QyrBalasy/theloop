@@ -128,3 +128,43 @@ main {
     max-width: 764px;
   }
 }
+
+.section-adv {
+  &__title {
+    margin-bottom: 129px;
+  }
+  &__items {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    column-gap: 30px;
+    row-gap: 45px;
+  }
+  &__item {
+    border-radius: 15px;
+    padding: 0 20px 40px 20px;
+    position: relative;
+    &:nth-child(odd){
+      box-shadow: 0 3px 10px #dbe8fe;
+    }
+    & img {
+      width: 98px;
+      height: 98px;
+      position: absolute;
+      top: -40px;
+      left: 20px;
+    }
+    & h4 {
+      font-size: 32px;
+      line-height: 36px;
+      font-weight: 400;
+      margin-bottom: 27px;
+      margin-top: 87px;
+    }
+    & p {
+      font-size: 24px;
+      line-height: 30px;
+      font-weight: 400px;
+      color: $black;
+    }
+  }
+}
