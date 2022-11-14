@@ -17,6 +17,15 @@ export const js = () => {
         output: {
           filename: "app.min.js",
         },
+        target: ["web", "es5"],
+        module: {
+          rules: [
+            {
+              test: /\.(scss|css)$/,
+              use: ["style-loader", "css-loader", "sass-loader"],
+            },
+          ],
+        },
       })
     )
     .pipe(app.gulp.dest(app.path.build.js))
