@@ -2,6 +2,9 @@ main {
   display: flex;
   flex-direction: column;
   gap: 160px;
+  & section:last-child{
+    margin-bottom: 160px;
+  }
 }
 
 .section-promo {
@@ -12,7 +15,7 @@ main {
       max-width: 656px;
       display: flex;
       flex-direction: column;
-      gap: 100px;
+      gap: 95px;
       padding-top: 147px;
     }
     &-abstract {
@@ -126,6 +129,13 @@ main {
   padding: 60px 0;
   &__items {
     max-width: 764px;
+    & p {
+      color: $black;
+    }
+    &-input {
+      display: flex;
+      gap: 27px;
+    }
   }
 }
 
@@ -143,7 +153,7 @@ main {
     border-radius: 15px;
     padding: 0 20px 40px 20px;
     position: relative;
-    &:nth-child(odd){
+    &:nth-child(odd) {
       box-shadow: 0 3px 10px #dbe8fe;
     }
     & img {
@@ -165,6 +175,185 @@ main {
       line-height: 30px;
       font-weight: 400px;
       color: $black;
+    }
+  }
+}
+
+.section-portfolio {
+  &__title {
+    margin-bottom: 131px;
+  }
+  &__items {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(386px, 1fr));
+    gap: 21px;
+
+    &-card {
+      background-color: $card-color;
+      border-radius: 10px;
+      // max-height: 573px;
+      // height: 100%;
+      // width: 100%;
+      padding: 38px 50px;
+      & p {
+        font-size: 22px;
+        color: $black;
+      }
+    }
+  }
+}
+
+.section-additional {
+  background-image: url("@img/background2.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 141px 0;
+}
+
+@property --floor {
+  syntax: "<integer>";
+  initial-value: 0;
+  inherits: false;
+}
+
+.section-process {
+  &__title {
+    margin-bottom: 141px;
+  }
+  &__items {
+    --cols: 1;
+    display: grid;
+    grid-template-columns: repeat(var(--cols), 1fr);
+    gap: 10px;
+    & li {
+      --col: 0;
+      align-self: center;
+      order: var(--num);
+      height: 176px;
+      background-color: $white;
+      border-radius: 15px;
+      padding: 13px 22px;
+      box-shadow: 0px 4px 4px 0px #0000001a;
+    }
+    @media (min-width: 500px) and (max-width: 749px) {
+      --cols: 2;
+
+      & li:nth-child(2n + 1) {
+        --col: 0;
+      }
+      & li:nth-child(2n + 2) {
+        --col: 1;
+      }
+
+      & li:nth-child(4n + 3),
+      & li:nth-child(4n + 4) {
+        order: calc(var(--num) + var(--cols) - 2 * var(--col) - 1);
+      }
+    }
+    @media (min-width: 750px) and (max-width: 999px) {
+      --cols: 3;
+
+      & li:nth-child(3n + 1) {
+        --col: 0;
+      }
+      & li:nth-child(3n + 2) {
+        --col: 1;
+      }
+      & li:nth-child(3n + 3) {
+        --col: 2;
+      }
+
+      & li:nth-child(6n + 4),
+      & li:nth-child(6n + 5),
+      & li:nth-child(6n + 6) {
+        order: calc(var(--num) + var(--cols) - 2 * var(--col) - 1);
+      }
+    }
+
+    @media (min-width: 1000px) {
+      --cols: 3;
+      gap: 173px;
+      & li:nth-child(4n + 1) {
+        --col: 0;
+      }
+      & li:nth-child(4n + 2) {
+        --col: 1;
+      }
+      & li:nth-child(4n + 3) {
+        --col: 2;
+      }
+      & li:nth-child(4n + 4) {
+        --col: 3;
+      }
+
+      & li:nth-child(8n + 5),
+      & li:nth-child(8n + 6),
+      & li:nth-child(8n + 7),
+      & li:nth-child(8n + 8) {
+        order: calc(var(--num) + var(--cols) - 2 * var(--col) - 1);
+      }
+    }
+  }
+}
+
+.section-price {
+  &__title {
+    max-width: 640px;
+    & h2 {
+      margin-bottom: 80px;
+    }
+  }
+}
+
+.section-contactForm {
+  &__wrapper {
+    background-color: #ece9ff;
+    border-top-left-radius: 36px;
+    border-top-right-radius: 36px;
+
+    // height: 79px;
+    padding: 35px 0 22px 36px;
+    &-items {
+      display: flex;
+      gap: 19px;
+      & span {
+        border-radius: 50%;
+        width: 22px;
+        height: 22px;
+        display: block;
+        &:nth-child(1) {
+          background-color: #ff0000;
+        }
+        &:nth-child(2) {
+          background-color: #ffd232;
+        }
+        &:nth-child(3) {
+          background-color: #5cc906;
+        }
+      }
+    }
+  }
+  &__items {
+    padding: 56px 47px 56px 36px;
+    background-color: #f9f9f9;
+    border-bottom-left-radius: 36px;
+    border-bottom-right-radius: 36px;
+    display: flex;
+    justify-content: space-between;
+    &-info {
+      & h3 {
+        font-size: 40px;
+        line-height: 48px;
+        color: $black;
+        font-family: RFDewi;
+        font-weight: 400;
+      }
+      & ul {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        margin-top: 57px;
+      }
     }
   }
 }

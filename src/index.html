@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
   @@include('html/head.html', { "title": "[The Loop]" })
   <body>
     @@include('html/header.html', {})
@@ -210,19 +210,19 @@
       <section class="section-call">
         <div class="container">
           <div class="section-call__items">
-            <h2 class="section-call__title">Не знаете какой сайт вам нужен?</h2>
+            <h2>Не знаете какой сайт вам нужен?</h2>
             <p style="margin: 50px 0">
               Оставьте свой номер и мы Вас проконсультируем бесплатно
             </p>
-            <form method="post">
+            <div class="section-call__items-input">
               <input
                 type="tel"
                 data-tel-input
                 placeholder="Введите телефон"
                 maxlength="18"
               />
-              <button type="submit">Отправить</button>
-            </form>
+              <button type="submit" class="secondary-button">Отправить</button>
+            </div>
           </div>
         </div>
       </section>
@@ -271,27 +271,141 @@
       <section class="section-portfolio">
         <div class="container">
           <h2 class="section-portfolio__title">Портфолио</h2>
-          <div class="section-portfolio__items">
-            <!-- Slider main container -->
-            <div class="swiper">
-              <!-- Additional required wrapper -->
-              <div class="swiper-wrapper">
-                <!-- Slides -->
-                <div class="swiper-slide">Slide 1</div>
-                <div class="swiper-slide">Slide 2</div>
-                <div class="swiper-slide">Slide 3</div>
-                ...
+          <!-- <div class="section-portfolio__items"> -->
+          <!-- Slider main container -->
+          <div class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="section-portfolio__items swiper-slide">
+                <div class="section-portfolio__items-card">
+                  <div>
+                    <img src="" alt="" />
+                  </div>
+                  <h3>34 cm</h3>
+                  <p>Разработка дизайна для сайта дизайна интерьера</p>
+                </div>
+                <div class="section-portfolio__items-card">
+                  <div>
+                    <img src="" alt="" />
+                  </div>
+                  <h3>ST nails</h3>
+                  <p>Разработка дизайна для сайта дизайна интерьера</p>
+                </div>
+                <div class="section-portfolio__items-card">
+                  <div>
+                    <img src="" alt="" />
+                  </div>
+                  <h3>MyWave</h3>
+                  <p>Разработка дизайна для сайта дизайна интерьера</p>
+                </div>
               </div>
-              <!-- If we need pagination -->
-              <div class="swiper-pagination"></div>
-
-              <!-- If we need navigation buttons -->
-              <div class="swiper-button-prev"></div>
-              <div class="swiper-button-next"></div>
-
-              <!-- If we need scrollbar -->
-              <div class="swiper-scrollbar"></div>
+              <!-- <div class="swiper-slide">Slide 2</div>
+                <div class="swiper-slide">Slide 3</div> -->
             </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+
+            <!-- If we need scrollbar -->
+            <div class="swiper-scrollbar"></div>
+          </div>
+          <!-- </div> -->
+        </div>
+      </section>
+      <section class="section-additional">
+        <div class="container">
+          <h3>
+            Мы разрабатываем, создаем и запускаем цифровые продукты, которые
+            дают брендам конкурентное преимущество.
+          </h3>
+        </div>
+      </section>
+      <section class="section-process">
+        <div class="container">
+          <h2 class="section-process__title">Хотите хороший сайт?</h2>
+          <ul class="section-process__items">
+            <li style="--num: 1">
+              <p>Оставьте заявку на нашем сайте указав свои данные</p>
+            </li>
+            <li style="--num: 2">
+              <p>
+                Наш менеджер перезвонит вам и проведет бесплатную консультацию
+              </p>
+            </li>
+            <li style="--num: 3">
+              <p>Мы встречаемся с вами и обсуждаем все детали кейса</p>
+            </li>
+            <li style="--num: 4">
+              <p>Подписываем договор о создании сайта</p>
+            </li>
+            <li style="--num: 5">
+              <p>Через месяц вы получаете готовый сайт</p>
+            </li>
+            <li style="--num: 6">
+              <p>В течение 3 месяцев предоставляем поддержку сайта</p>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="section-price">
+        <div class="container">
+          <div class="section-price__title">
+            <h2>Цены</h2>
+            <p>
+              Всех наших клиентов волнует одинаковый вопрос – сколько стоит
+              заказать сайт? Однако единого ответа на него нет, так как итоговая
+              сумма рассчитывается для каждого проекта в индивидуальном порядке.
+            </p>
+            <br />
+            <p>
+              Оставьте заявку и мы вам перезвоним, проконсультируем и отправим
+              КП
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="section-contactForm">
+        <div class="container">
+          <div class="section-contactForm__wrapper">
+            <div class="section-contactForm__wrapper-items">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </div>
+          <div class="section-contactForm__items">
+            <div class="section-contactForm__items-info">
+              <h3>Конкуренты не ждут, уже сейчас заказывайте продающий сайт</h3>
+              <ul>
+                <li><a href="#">+7747 814 23 85</a></li>
+                <li><a href="#">info@theloop.kz</a></li>
+                <li><a href="#">Алматы, Казахстан</a></li>
+              </ul>
+            </div>
+            <form class="section-contactForm__items-form">
+              <div>
+                <label>Имя*</label>
+                <input type="text" />
+              </div>
+              <div>
+                <label>Телефон номера*</label>
+                <input
+                  type="tel"
+                  data-tel-input
+                  placeholder="Введите телефон"
+                  maxlength="18"
+                />
+              </div>
+              <div>
+                <label>Какой сайт Вам нужен?</label>
+                <textarea placeholder="Сообщение" name="message"></textarea>
+              </div>
+              <button class="secondary-button">Оставить заявку</button>
+            </form>
           </div>
         </div>
       </section>
